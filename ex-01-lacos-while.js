@@ -299,19 +299,21 @@ while (indice7 < nomes.length) {
   if(nomes[indice7].length<= 5){novoOutroNovoArrey.push(nomes[indice7])}
   indice7++
 }
-
-
-
-
-export const resposta07 = false
+export const resposta07 = novoOutroNovoArrey
 
 /* Questão 08
 Ainda com a lista de nomes, crie um novo array onde todos os nomes estejam
 escritos em letras maiúsculas. Armazene o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta08 = false
+let nomesMaiusculos = []
+let indice8 = 0
+while(indice8 <[nomes.length])
+{nomesMaiusculos[indice8] = nomes[indice8].toUpperCase()
+indice8++
+}
+ 
+export const resposta08 = nomesMaiusculos
 
 /* Questão 09
 Seguindo com a mesma lista de nomes, crie um novo array contendo apenas os nomes
@@ -320,7 +322,23 @@ Armazene o novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta09 = false
+let vogais = {
+  A: true,
+  E: true,
+  I: true,
+  O: true,
+  U: true}
+let comecoVogal = []
+let indice9 = 0
+while (indice9 < nomes.length) 
+{
+  if(vogais[nomes[indice9][0]])
+  {
+     comecoVogal.push(nomes[indice9]) 
+  }
+  indice9++
+}
+export const resposta09 = comecoVogal
 
 /* Questão 10
 Finalizando com a lista de nomes, encontre o nome mais longo da lista.
@@ -329,4 +347,15 @@ apenas o primeiro que aparecer na lista. Coloque o nome encontrado na variável 
 */
 // Escreva o código da solução abaixo:
 
-export const resposta10 = false
+let indice10 = 0
+let anterior = nomes[indice10]
+while(indice10<nomes.length)
+{
+if (anterior.length < nomes[indice10].length) 
+{
+  anterior = nomes[indice10]
+
+}
+indice10 ++
+}
+export const resposta10 = anterior
