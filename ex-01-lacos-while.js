@@ -348,7 +348,7 @@ apenas o primeiro que aparecer na lista. Coloque o nome encontrado na variável 
 // Escreva o código da solução abaixo:
 
 let indice10 = 0
-let anterior = nomes[indice10]
+let anterior = nomes[0]
 while(indice10<nomes.length)
 {
 if (anterior.length < nomes[indice10].length) 
